@@ -1,0 +1,37 @@
+/*https://colorhunt.co/palette/06283d256d8547b5ffdff6ff
+    font-family: 'Rubik Bubbles', cursive;
+    font-family: 'Kanit', sans-serif;
+*/
+
+:root{
+    --navy-blue: #06283D;
+    --dark-turquoise: #256D85;
+    --blue: #47B5FF; 
+    --white-blue: #DFF6FF;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 600px 600px;
+}
+header .header-info{
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header .header-info h1{
+    margin-right: 100px;
+    font-family: 'Rubik Bubbles', cursive;
+    font-weight: lighter;
+}
+header .header-info p{
+    font-family: 'Kanit', sans-serif;
+}
