@@ -1,37 +1,107 @@
 /*https://colorhunt.co/palette/06283d256d8547b5ffdff6ff
-    font-family: 'Rubik Bubbles', cursive;
     font-family: 'Kanit', sans-serif;
+    font-family: 'Anton', sans-serif;
 */
 
 :root{
-    --navy-blue: #06283D;
-    --dark-turquoise: #256D85;
-    --blue: #47B5FF; 
-    --white-blue: #DFF6FF;
+    --black: #232425;
+    --Misty-blue: #ECF2F7;
+    --Tan: #8F6956; 
+    --Pewter: #D4D9DD;
+    --Anton: 'Anton', sans-serif;
+    --Kanit: 'Kanit', sans-serif;
+    --Rubik-Bubbles: 'Rubik Bubbles', cursive;
 }
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-header{
-    height: 100px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 600px 600px;
+html{
+    font-size: 62.5%;
 }
-header .header-info{
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* header styles */
+header{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--black);
+    color: var(--Misty-blue);
+    font-family: var(--Kanit);
+    font-weight: 300;
+    color: var(--Pewter);
+}
+.header-info{
+    width: 80%;
     height: 100%;
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-info .tittle{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.header-info p{
+    font-size: 1.6rem;
+}
+.header-contact{
+    width: 20%;
+    height: 100%;
+    text-align: center;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
-header .header-info h1{
-    margin-right: 100px;
-    font-family: 'Rubik Bubbles', cursive;
-    font-weight: lighter;
+.header-contact .icons #hamburger-icon{
+    color: var(--Misty-blue);
+    font-size: 2.2rem;
 }
-header .header-info p{
-    font-family: 'Kanit', sans-serif;
+.header-contact .icons #insta-whatsapp{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main styles */
+main{
+    width: 100%;
+    height: 75%;
+    background-color: var(--Misty-blue);
+}
+
+/* footer styles */
+footer{
+    width: 100%;
+    height: 10%;
+    background-color: var(--Tan);
 }
