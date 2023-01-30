@@ -1,6 +1,7 @@
 /*https://colorhunt.co/palette/06283d256d8547b5ffdff6ff
     font-family: 'Kanit', sans-serif;
     font-family: 'Anton', sans-serif;
+    width: 394px - mobile
 */
 
 :root{
@@ -25,6 +26,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--black);
 }
 .active{
     display: none;
@@ -37,6 +39,7 @@ body{
 header{
     width: 100%;
     height: 15%;
+    max-width: 1300px;
     display: flex;
     justify-content: center;
     background-color: var(--black);
@@ -68,7 +71,10 @@ header{
     align-items: center;
     justify-content: center;
 }
-.header-contact .icons #hamburger-icon{
+.header-contact .email-section, .header-contact .cel-section{
+    display: none;
+}
+.header-contact .icons .hamburger-icon-container #hamburger-icon{
     color: var(--Misty-blue);
     font-size: 2.2rem;
 }
@@ -78,12 +84,14 @@ header{
 /* Aside menu es */
 header .header-aside-mobile{
     width: 50%;
-    height: 200px;
+    max-width: 275px;
+    height: 300px;
     background-color: var(--black);
     position: absolute;
-    left: 0;
-    font-size: 1.4rem;
-    border-radius: 0 0 30px 0;
+    right: 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+    border-radius: 0 0 0 30px;
     /*box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;*/
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -100,11 +108,24 @@ header .header-aside-mobile .aside-container .aside-container-list{
     text-align: center;
     list-style: none;
 }
-.aside-container-list .container-list-email{
+.aside-container .aside-container-list .container-list-email{
     margin-bottom: 20px;
+    font-size: 1.2rem;
 }
-
-
+.aside-container .aside-container-icons #insta-whatsapp{
+   font-size: 3rem;
+   margin-right: 10px;
+   margin-left: 15px;
+}
+.header-aside-mobile #x-icon{
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 10px;
+    font-weight: 500;
+    color: white;
+}
 
 
 
@@ -133,4 +154,70 @@ footer{
     width: 100%;
     height: 10%;
     background-color: var(--Tan);
+}
+
+
+
+
+
+@media (min-width: 900px) {
+    .header-info{
+        flex-direction: row;
+        align-items: center;
+    }
+    .header-contact{
+        width: 25%;
+    }
+    .header-info .tittle{
+        font-size: 4rem;
+        margin-right: 15%;
+    }
+    .header-info p{
+        font-size: 2.5rem;
+        margin-right: 5%;
+    }
+}
+
+
+@media (min-width: 1100px){
+    header{
+        justify-content: center;
+        max-width: 1300px;
+        align-self: center;
+    }
+    .header-info{
+        width: 65%;
+    }
+    .header-info .tittle{
+        font-size: 4rem;
+    }
+    .header-info p{
+        font-size: 3rem;
+    }
+    .header-contact {
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        font-size: 1.5rem;
+    }
+    .header-contact .email-section, .header-contact .cel-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-contact .email-section .email, .header-contact .cel-section .cel{
+        font-size: 2.5rem;
+    }
+    .header-contact .icons{
+        display: flex;
+    }
+    .header-contact .icons #insta-whatsapp{
+        display: inline;
+        margin-right: 20px;
+        font-size: 3rem;
+    }
+    .header-contact .icons #hamburger-icon{
+        display: none;
+    }
 }
