@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&family=Roboto+Mono:wght@400;600;700&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,700&family=Montserrat:ital,wght@0,300;0,500;1,700&display=swap');
 /*
+font-family: 'Lora', serif;
 font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto Mono', monospace;
-font-family: 'Vina Sans', sans-serif;
 */
 
 *{
@@ -14,6 +13,7 @@ font-family: 'Vina Sans', sans-serif;
     --gray1: #d5d8ea;
     --white1: #f3f3f3;
     --blue: #1f202f;
+    --blue2: #191a22;
     --gray2: #79787e;
     --white2: #e5e5e5;
 }
@@ -21,8 +21,12 @@ html{
     font-size: 62.5%;
 }
 body{
-    background-color: var(--white1);
+    background-color: var(--blue);
 }
+
+
+/* HEADER */
+
 body header{
     width: 100%;
     display: flex;
@@ -30,58 +34,146 @@ body header{
     padding-top: 1rem;
 }
 body header .name-container{
-    color: var(--blue);
-    font-size: 2.3rem;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: bold;
+    color: var(--gray1);
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     width: 90%;
     padding-bottom: 1rem;
-    border-bottom: solid 1px var(--blue);
+    border-bottom: solid 1px var(--white1);
 }
+
+/* MAIN */
 main{
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+/* ME SECTION*/
+
+
+
+/* SKILLS SECTION */
+
+main .section-skills{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    border-bottom: solid 1px var(--white1);
+    margin-bottom: 5rem;
+}
+main .section-skills .skills-tittle{
+    font-size: 2.2rem;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: var(--gray1);
+}
+main .section-skills .skills-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: center;
     margin-top: 2rem;
 }
-main section{
+.skills-container .skills-img-container{
+    width: 16rem;
+    height: 16rem;
+}
+.skills-container .skills-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    color: gray;
+}
+
+
+/* PROJECTS SECTION */
+
+main .section-projects{
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-main section .section-tittle{
+main .section-projects .projects-tittle{
+    font-size: 2.2rem;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--gray1);
+
+}
+main .section-projects .section-tittle{
     font-size: 2rem;
     margin: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
-main section .project{
+main .section-projects .projects-container{
+    display: flex;
     width: 100%;
-    height: 25rem;
-    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+main .section-projects .project{
+    width: 100%;
+    height: 30%;
+    max-width: 400px;
+    margin-bottom: rem;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-main section .project .img-container{
+main .section-projects .project .img-container{
     height: 80%;
 }
-main section .project .img-container img{
+main .section-projects .project .img-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 0.5rem;
 }
-main section .project:hover{
-    background-color: var(--gray1);
-}
-main section .project p{
+
+main .section-projects .project a{
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
     margin-top: 1.2rem;
-    border-bottom: solid 1px var(--blue);
+    border-bottom: solid 1px var(--white1);
     padding-bottom: 0.5rem;
     text-align: center;
+    text-decoration: none;
+    color: var(--white2);
 }
  
 
+/* FOOTER */
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue2);
+    margin-top: 6rem;
+}
+footer .social-media{
+    width: 90%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media .media-img-container{
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem;
+}
+.social-media .media-img-container i{
+    font-size: 3rem;
+    color: var(--gray1);
+}
