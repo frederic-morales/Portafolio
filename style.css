@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&family=Roboto+Mono:wght@400;600;700&family=Vina+Sans&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Vina Sans', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --gray1: #d5d8ea;
+    --white1: #f3f3f3;
+    --blue: #1f202f;
+    --gray2: #79787e;
+    --white2: #e5e5e5;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--white1);
+}
+body header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+body header .name-container{
+    color: var(--blue);
+    font-size: 2.3rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    width: 90%;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px var(--blue);
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+main section{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main section .section-tittle{
+    font-size: 2rem;
+    margin: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+main section .project{
+    width: 100%;
+    height: 25rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main section .project .img-container{
+    height: 80%;
+}
+main section .project .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main section .project:hover{
+    background-color: var(--gray1);
+}
+main section .project p{
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1.2rem;
+    border-bottom: solid 1px var(--blue);
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+ 
+
