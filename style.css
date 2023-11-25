@@ -30,8 +30,11 @@ body{
 body header{
     width: 100%;
     display: flex;
+    background-color: var(--blue2);
     justify-content: center;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
+    position: fixed;
+    top: 0;
 }
 body header .name-container{
     color: var(--gray1);
@@ -39,8 +42,7 @@ body header .name-container{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     width: 90%;
-    padding-bottom: 1rem;
-    border-bottom: solid 1px var(--white1);
+    padding-bottom: 1.5rem;
 }
 
 /* MAIN */
@@ -49,11 +51,53 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 
 /* ME SECTION*/
 
+main .section-me{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+main .section-me .profilePhoto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.profilePhoto .profilePhoto-container{
+    width: 29rem;
+    height: 29rem;
+}
+.profilePhoto .profilePhoto-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+main .section-me .description-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: solid 1px var(--white1);
+}
+.section-me .description-container p{
+    color: var(--white2);
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+.section-me .description-container h1{
+    font-size: 3rem;
+    font-family: 'Lora', serif;
+    color: var(--white1);
+}
 
 
 /* SKILLS SECTION */
