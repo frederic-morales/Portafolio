@@ -27,23 +27,59 @@ body{
 
 /* HEADER */
 
-body header{
+header{
     width: 100%;
+    height: 6rem;
     display: flex;
     background-color: var(--blue2);
     justify-content: center;
-    padding-top: 1.5rem;
     position: fixed;
     top: 0;
 }
-body header .name-container{
+header .name-menu-container{
+    display: flex;
+    background-color: var(--blue2);
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+.name-menu-container .name{
     color: var(--gray1);
     font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    width: 90%;
-    padding-bottom: 1.5rem;
 }
+.name-menu-container i{
+    font-size: 2.5rem;
+    color: var(--gray1);
+}
+
+
+/* MENU */
+header .menu{
+    position: fixed;
+    top: 4.5rem;
+    right: 0;
+}
+header .display-menu{
+    display: none;
+}
+header .menu-container{
+    width: 13rem;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--blue2);
+    border-radius: 0 0 0 3rem;
+}
+header .menu-container a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--gray1);
+    margin-left: 2rem;
+}
+
 
 /* MAIN */
 main{
@@ -51,7 +87,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 6rem;
 }
 
 /* ME SECTION*/
@@ -61,7 +96,7 @@ main .section-me{
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
-    padding-top: 3rem;
+    padding-top: 10rem;
 }
 
 main .section-me .profilePhoto{
@@ -83,7 +118,7 @@ main .section-me .profilePhoto{
 main .section-me .description-container{
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 4rem;
     padding-bottom: 2rem;
     border-bottom: solid 1px var(--white1);
 }
@@ -109,7 +144,7 @@ main .section-skills{
     align-items: center;
     padding-bottom: 1.5rem;
     border-bottom: solid 1px var(--white1);
-    margin-bottom: 5rem;
+    margin-top: 3rem;
 }
 main .section-skills .skills-tittle{
     font-size: 2.2rem;
@@ -144,6 +179,7 @@ main .section-projects{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 6rem;
 }
 main .section-projects .projects-tittle{
     font-size: 2.2rem;
