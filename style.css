@@ -38,7 +38,6 @@ header{
 }
 header .name-menu-container{
     display: flex;
-    background-color: var(--blue2);
     width: 90%;
     align-items: center;
     justify-content: space-between;
@@ -54,8 +53,7 @@ header .name-menu-container{
     color: var(--gray1);
 }
 
-
-/* MENU */
+/* HEADER MENU */
 header .menu{
     position: fixed;
     top: 4.5rem;
@@ -95,7 +93,6 @@ main .section-me{
     width: 90%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 3rem;
     padding-top: 10rem;
 }
 
@@ -120,13 +117,13 @@ main .section-me .description-container{
     flex-direction: column;
     margin-top: 4rem;
     padding-bottom: 2rem;
-    border-bottom: solid 1px var(--white1);
+    /*border-bottom: solid 1px var(--white1);*/
 }
 .section-me .description-container p{
     color: var(--white2);
     font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
-    text-align: justify;
+    text-align: start;
 }
 .section-me .description-container h1{
     font-size: 3rem;
@@ -142,9 +139,8 @@ main .section-skills{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 1.5rem;
-    border-bottom: solid 1px var(--white1);
-    margin-top: 3rem;
+    /*border-bottom: solid 1px var(--white1);*/
+    margin-top: 7.5rem;
 }
 main .section-skills .skills-tittle{
     font-size: 2.2rem;
@@ -179,28 +175,22 @@ main .section-projects{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: 7.5rem;
 }
 main .section-projects .projects-tittle{
     font-size: 2.2rem;
     font-family: 'Lora', serif;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     color: var(--gray1);
 
-}
-main .section-projects .section-tittle{
-    font-size: 2rem;
-    margin: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
 }
 main .section-projects .projects-container{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 3rem;
 }
 main .section-projects .project{
     width: 100%;
@@ -210,6 +200,7 @@ main .section-projects .project{
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-decoration: none;
 }
 main .section-projects .project .img-container{
     height: 80%;
@@ -221,15 +212,13 @@ main .section-projects .project .img-container img{
     border-radius: 0.5rem;
 }
 
-main .section-projects .project a{
+main .section-projects .project p{
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 1.2rem;
-    border-bottom: solid 1px var(--white1);
-    padding-bottom: 0.5rem;
     text-align: center;
     text-decoration: none;
     color: var(--white2);
+    margin-top: 1.3rem;
 }
  
 
