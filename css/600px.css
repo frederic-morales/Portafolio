@@ -1,0 +1,35 @@
+/* HEADER */
+header .menu{
+    display: none;
+}
+header .name-menu-container i{
+    display: none;
+}
+header .name-menu-container .menu-tablet-desktop{
+    display: flex;
+    justify-content: end;
+}
+header .name-menu-container .menu-tablet-desktop a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--gray1);
+    margin-left: 2rem;
+    margin-left: 4rem;
+}
+
+/* ME SECTION*/
+main .section-me{
+    flex-direction: row-reverse;
+    padding-top: 12rem;
+}
+main .section-me .profilePhoto{
+    width: 50%;
+    justify-content: end;
+}
+main .section-me .description-container{
+    width: 50%;
+    padding-top: 2rem;
+}
+main .section-me .description-container{
+    padding-right: 5%;
+}

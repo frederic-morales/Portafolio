@@ -77,8 +77,10 @@ header .menu-container a{
     color: var(--gray1);
     margin-left: 2rem;
 }
-
-
+/*MENU EN TABLET Y DESKTOP*/
+header .name-menu-container .menu-tablet-desktop{
+    display: none;
+}
 /* MAIN */
 main{
     width: 100%;
@@ -102,8 +104,8 @@ main .section-me .profilePhoto{
     justify-content: center;
 }
 .profilePhoto .profilePhoto-container{
-    width: 29rem;
-    height: 29rem;
+    width: 27rem;
+    height: 27rem;
 }
 .profilePhoto .profilePhoto-container img{
     width: 100%;
@@ -129,6 +131,7 @@ main .section-me .description-container{
     font-size: 3rem;
     font-family: 'Lora', serif;
     color: var(--white1);
+    letter-spacing: 0.2rem;
 }
 
 

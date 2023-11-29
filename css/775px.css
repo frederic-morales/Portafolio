@@ -1,0 +1,25 @@
+/* HEADER */
+header{
+    height: 7rem;
+}
+header .name-menu-container .name{
+    font-size: 3rem;
+}
+header .name-menu-container .menu-tablet-desktop a{
+    font-size: 2rem;
+}
+
+/* ME SECTION*/
+.profilePhoto .profilePhoto-container{
+    width: 32em;
+    height: 32rem;
+}
+.section-me .description-container p{
+    font-size: 1.65rem;
+}
+.section-me .description-container h1{
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+}
+
+/* SKILLS SECTION */
