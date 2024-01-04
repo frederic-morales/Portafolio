@@ -53,10 +53,17 @@ main .section-projects .project p{
 }
 
 /* FOOTER */
+footer .social-media{
+    height: 18rem;
+}
 .social-media .media-img-container{
     margin: 3.5rem;
 }
 .social-media .media-img-container i{
-    font-size: 3.8rem;
+    font-size: 4.2rem;
     color: var(--gray1);
+}
+footer .contact{
+    height: 17rem;
+    font-size: 1.6rem;
 }
