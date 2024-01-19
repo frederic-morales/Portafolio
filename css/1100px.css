@@ -1,69 +1,69 @@
 /* HEADER */
-header{
-    height: 7.5rem;
+header {
+  height: 7.5rem;
 }
-header .name-menu-container .name{
-    font-size: 3.2rem;
+header .name-menu-container .name {
+  font-size: 3.2rem;
 }
-header .name-menu-container .menu-tablet-desktop a{
-    font-size: 2.2rem;
+header .name-menu-container .menu-tablet-desktop a {
+  font-size: 2.2rem;
 }
 
 /* ME SECTION*/
-main .section-me{
-    padding-top: 18rem;
+main .section-me {
+  padding-top: 18rem;
 }
-.section-me .profilePhoto .profilePhoto-container{
-    width: 42em;
-    height: 42rem;
+.section-me .profilePhoto .profilePhoto-container {
+  width: 42em;
+  height: 42rem;
 }
-.section-me .description-container p{
-    font-size: 2.3rem;
+.section-me .description-container p {
+  font-size: 2.3rem;
 }
-.section-me .description-container h1{
-    font-size: 6rem;
-    letter-spacing: 0.5rem;
+.section-me .description-container h1 {
+  font-size: 6rem;
+  letter-spacing: 0.5rem;
 }
 
 /* SKILLS SECTION */
-main .section-skills{
-    padding-top: 14rem;
+main .section-skills {
+  padding-top: 14rem;
 }
-main .section-skills .skills-tittle{
-    font-size: 4.4rem;
-    letter-spacing: 0.7rem;
+main .section-skills .skills-tittle {
+  font-size: 4.4rem;
+  letter-spacing: 0.7rem;
 }
-main .section-skills .skills-container{
-    max-width: none;
-    row-gap: 1rem;
-    column-gap: 5rem;
-    justify-content: space-evenly;
+main .section-skills .skills-container {
+  max-width: none;
+  row-gap: 1rem;
+  column-gap: 5rem;
+  justify-content: space-evenly;
 }
-.skills-container .skills-img-container{
-    width: 30%;
+.skills-container .skills-img-container {
+  width: 30%;
 }
 
 /* PROJECTS SECTION */
-main .section-projects .projects-tittle{
-    font-size: 4.4rem;
-    letter-spacing: 0.7rem;
+main .section-projects .projects-tittle {
+  font-size: 4.4rem;
+  letter-spacing: 0.7rem;
 }
-main .section-projects .project p{
-    font-size: 1.6rem;
+main .section-projects .project p {
+  font-size: 1.6rem;
 }
 
 /* FOOTER */
-footer .social-media{
-    height: 18rem;
+
+footer .social-media {
+  height: 18rem;
 }
-.social-media .media-img-container{
-    margin: 3.5rem;
+.social-media .media-img-container {
+  margin-right: 5rem;
 }
-.social-media .media-img-container i{
-    font-size: 4.2rem;
-    color: var(--gray1);
+.social-media .media-img-container i {
+  font-size: 4.2rem;
+  color: var(--gray1);
 }
-footer .contact{
-    height: 17rem;
-    font-size: 1.6rem;
+footer .contact {
+  font-size: 1.3rem;
 }
